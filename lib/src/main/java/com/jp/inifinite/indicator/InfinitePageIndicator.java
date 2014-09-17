@@ -8,7 +8,9 @@ import android.view.View;
 
 import com.jp.inifinite.Infinite;
 
-
+/**
+ * page indicator infinite scroll
+ */
 public abstract class InfinitePageIndicator extends View implements PageIndicator {
 
     protected ViewPager mViewPager;
@@ -43,9 +45,9 @@ public abstract class InfinitePageIndicator extends View implements PageIndicato
     }
 
     /**
-     * 获取page adapter count
+     * get page adapter count
      *
-     * @return page adapter中数量
+     * @return
      */
     public int getPageCount() {
         PagerAdapter adapter = mViewPager.getAdapter();

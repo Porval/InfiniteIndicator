@@ -1,0 +1,22 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
+
+
+#Android generated
+bin
+gen
+
+#IntelliJ IDEA
+.idea
+*.iml
+classes
+
+#Command line
+local.properties
+build.xml
+proguard-project.txt
+
+#Gradle
+/build

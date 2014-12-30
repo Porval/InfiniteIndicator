@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import com.jp.inifinite.InfinitePagerView;
 import com.jp.inifinite.indicator.InfinitePageIndicator;
-import com.jp.inifinite.indicator.demo.R;
 
 public class DemoCircleInfiniteIndicatorAct extends BaseDemoActivity {
 

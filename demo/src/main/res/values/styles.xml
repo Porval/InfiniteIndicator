@@ -6,10 +6,10 @@
     </style>
 
     <style name="IpiCirclePageIndicatorStyle">
-        <item name="radius">7dp</item>
-        <item name="fillColor">#3e82f8</item>
-        <item name="pageColor">#fa595f</item>
-        <item name="centered">true</item>
+        <item name="cpi_radius">7dp</item>
+        <item name="cpi_fillColor">#3e82f8</item>
+        <item name="cpi_pageColor">#fa595f</item>
+        <item name="cpi_centered">true</item>
     </style>
 
 </resources>

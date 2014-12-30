@@ -71,17 +71,17 @@ public class InfiniteCirclePagerIndicator extends InfinitePageIndicator {
         //Retrieve styles attributes
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ipiCirclePageIndicator, defStyle, 0);
 
-        mCentered = a.getBoolean(R.styleable.ipiCirclePageIndicator_centered, defaultCentered);
+        mCentered = a.getBoolean(R.styleable.ipiCirclePageIndicator_cpi_centered, defaultCentered);
         mOrientation = a.getInt(R.styleable.ipiCirclePageIndicator_android_orientation, defaultOrientation);
         mPaintPageFill.setStyle(Paint.Style.FILL);
-        mPaintPageFill.setColor(a.getColor(R.styleable.ipiCirclePageIndicator_pageColor, defaultPageColor));
+        mPaintPageFill.setColor(a.getColor(R.styleable.ipiCirclePageIndicator_cpi_pageColor, defaultPageColor));
         mPaintStroke.setStyle(Paint.Style.STROKE);
-        mPaintStroke.setColor(a.getColor(R.styleable.ipiCirclePageIndicator_strokeColor, defaultStrokeColor));
-        mPaintStroke.setStrokeWidth(a.getDimension(R.styleable.ipiCirclePageIndicator_strokeWidth, defaultStrokeWidth));
+        mPaintStroke.setColor(a.getColor(R.styleable.ipiCirclePageIndicator_cpi_strokeColor, defaultStrokeColor));
+        mPaintStroke.setStrokeWidth(a.getDimension(R.styleable.ipiCirclePageIndicator_cpi_strokeWidth, defaultStrokeWidth));
         mPaintFill.setStyle(Paint.Style.FILL);
-        mPaintFill.setColor(a.getColor(R.styleable.ipiCirclePageIndicator_fillColor, defaultFillColor));
-        mRadius = a.getDimension(R.styleable.ipiCirclePageIndicator_radius, defaultRadius);
-        mSnap = a.getBoolean(R.styleable.ipiCirclePageIndicator_snap, defaultSnap);
+        mPaintFill.setColor(a.getColor(R.styleable.ipiCirclePageIndicator_cpi_fillColor, defaultFillColor));
+        mRadius = a.getDimension(R.styleable.ipiCirclePageIndicator_cpi_radius, defaultRadius);
+        mSnap = a.getBoolean(R.styleable.ipiCirclePageIndicator_cpi_snap, defaultSnap);
 
         Drawable background = a.getDrawable(R.styleable.ipiCirclePageIndicator_android_background);
         if (background != null) {

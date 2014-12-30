@@ -10,6 +10,7 @@
         <item name="cpi_fillColor">#3e82f8</item>
         <item name="cpi_pageColor">#fa595f</item>
         <item name="cpi_centered">true</item>
+        <item name="android:paddingTop">5dp</item>
     </style>
 
 </resources>

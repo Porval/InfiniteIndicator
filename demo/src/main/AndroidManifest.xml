@@ -26,6 +26,15 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".DemoTitleInfiniteIndicatorAct"
+            android:label="@string/label_demo_title_indicator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.jp.infinite.indicator.demo.ACT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

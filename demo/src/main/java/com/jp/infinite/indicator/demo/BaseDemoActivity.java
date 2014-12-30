@@ -70,5 +70,10 @@ public abstract class BaseDemoActivity extends FragmentActivity {
         public int getCount() {
             return mFragmentList.size();
         }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return String.format("Fragment %s", position);
+        }
     }
 }

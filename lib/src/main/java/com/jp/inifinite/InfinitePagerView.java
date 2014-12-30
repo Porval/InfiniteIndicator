@@ -36,6 +36,7 @@ public class InfinitePagerView extends ViewPager {
     public void setCurrentItem(int item, boolean smoothScroll) {
         PagerAdapter pagerAdapter = getAdapter();
         if (pagerAdapter instanceof InfinitePagerAdapterWrapper) {
+            //get closest virtual item index
             int currentItem = getCurrentItem();
             int virtualCurrentItem = super.getCurrentItem();
             int realCount = ((InfinitePagerAdapterWrapper) pagerAdapter).getRealCount();

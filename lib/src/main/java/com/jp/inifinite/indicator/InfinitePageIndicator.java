@@ -46,8 +46,6 @@ public abstract class InfinitePageIndicator extends View implements PageIndicato
 
     /**
      * get page adapter count
-     *
-     * @return
      */
     public int getPageCount() {
         PagerAdapter adapter = mViewPager.getAdapter();

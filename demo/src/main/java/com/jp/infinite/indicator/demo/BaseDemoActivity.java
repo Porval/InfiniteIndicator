@@ -5,7 +5,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.jp.inifinite.InfinitePagerAdapterWrapper;
 import com.jp.inifinite.InfinitePagerView;
 import com.jp.inifinite.indicator.InfinitePageIndicator;
 
@@ -41,7 +40,7 @@ public abstract class BaseDemoActivity extends FragmentActivity {
         mDemoPageAdapter = new DemoPagerAdapter(getSupportFragmentManager());
         mDemoPageAdapter.init();
 
-        mInfinitePagerView.setAdapter(new InfinitePagerAdapterWrapper(mDemoPageAdapter));
+        mInfinitePagerView.setAdapter(mDemoPageAdapter);
         mInfinitePageIndicator.setViewPager(mInfinitePagerView);
     }
 

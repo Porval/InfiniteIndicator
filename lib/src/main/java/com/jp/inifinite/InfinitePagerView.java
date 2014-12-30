@@ -21,6 +21,9 @@ public class InfinitePagerView extends ViewPager {
 
     @Override
     public void setAdapter(PagerAdapter adapter) {
+        if (!(adapter instanceof InfinitePagerAdapterWrapper)) {
+            adapter = new InfinitePagerAdapterWrapper(adapter);
+        }
         super.setAdapter(adapter);
         // offset first element so that we can scroll to the left
         setCurrentItem(0);

@@ -4,5 +4,6 @@
     <string name="app_name">demo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="label_demo_circle_indicator">Demo Circle Indicator</string>
 
 </resources>

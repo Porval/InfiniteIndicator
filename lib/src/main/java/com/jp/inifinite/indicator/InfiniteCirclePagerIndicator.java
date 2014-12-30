@@ -247,7 +247,7 @@ public class InfiniteCirclePagerIndicator extends InfinitePageIndicator {
         //Draw the filled circle according to the current scroll
         float cx = 0;
 
-        //循环indicator末尾存在偏移时，不显示偏移
+        //when current item is the last one, not plus page offset
         if (mCurrentPage == getPageCount() - 1 && mPageOffset > 0) {
             cx = mCurrentPage * threeRadius;
         } else {

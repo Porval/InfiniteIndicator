@@ -29,4 +29,44 @@
         <!-- View background -->
         <attr name="android:background"/>
     </declare-styleable>
+
+    <declare-styleable name="ipiTitlePageIndicator">
+        <!-- Screen edge padding. -->
+        <attr name="tpiClipPadding" format="dimension" />
+        <!-- Color of the footer line and indicator. -->
+        <attr name="tpiFooterColor" format="color" />
+        <!-- Height of the footer line. -->
+        <attr name="tpiFooterLineHeight" format="dimension" />
+        <!-- Style of the indicator. Default is triangle. -->
+        <attr name="tpiFooterIndicatorStyle">
+            <enum name="none" value="0" />
+            <enum name="triangle" value="1" />
+            <enum name="underline" value="2" />
+        </attr>
+        <!-- Height of the indicator above the footer line. -->
+        <attr name="tpiFooterIndicatorHeight" format="dimension" />
+        <!-- Left and right padding of the underline indicator. -->
+        <attr name="tpiFooterIndicatorUnderlinePadding" format="dimension" />
+        <!-- Padding between the bottom of the title and the footer. -->
+        <attr name="tpiFooterPadding" format="dimension" />
+        <!-- Position of the line. -->
+        <attr name="tpiLinePosition">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+        <!-- Color of the selected title. -->
+        <attr name="tpiSelectedColor" format="color"/>
+        <!-- Whether or not the selected item is displayed as bold. -->
+        <attr name="tpiSelectedBold" format="boolean" />
+        <!-- Color of regular titles. -->
+        <attr name="android:textColor" />
+        <!-- Size of title text. -->
+        <attr name="android:textSize" />
+        <!-- Padding between titles when bumping into each other. -->
+        <attr name="tpiTitlePadding" format="dimension" />
+        <!-- Padding between titles and the top of the View. -->
+        <attr name="tpiTopPadding" format="dimension" />
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
 </resources>

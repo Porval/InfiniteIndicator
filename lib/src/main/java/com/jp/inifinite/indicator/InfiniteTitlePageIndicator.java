@@ -368,7 +368,7 @@ public class InfiniteTitlePageIndicator extends InfinitePageIndicator {
         final int right = left + width;
         final float rightClip = right - mClipPadding;
 
-        //默认显示5个bound,中间为selected bound
+        //default show 5 bounds,the middle one as selected
         int selectedBoundIndex = DEFAULT_SELECTED_BOUND_INDEX;
         float offsetPercent;
         if (mPageOffset <= 0.5) {
@@ -638,7 +638,7 @@ public class InfiniteTitlePageIndicator extends InfinitePageIndicator {
     }
 
     /**
-     * 根据title index, 生成绘制区域
+     * according title index, create draw bounds
      *
      * @param paint
      * @return
@@ -649,7 +649,7 @@ public class InfiniteTitlePageIndicator extends InfinitePageIndicator {
         final int width = getWidth();
         final int halfWidth = width / 2;
 
-        //获取绘制区域
+        //get draw bounds
         for (int i = 0; i < titleIndexList.size(); i++) {
             Rect bounds = calcBounds(getTitle(titleIndexList.get(i)), paint);
             int w = bounds.right - bounds.left;
@@ -666,8 +666,8 @@ public class InfiniteTitlePageIndicator extends InfinitePageIndicator {
     }
 
     /**
-     * 获取循环title index
-     * 根据current page index,获取包含左右两边各两个
+     * get circular title index
+     * according current page index,total count 5
      *
      * @return
      */
@@ -675,15 +675,13 @@ public class InfiniteTitlePageIndicator extends InfinitePageIndicator {
         int count = getPageCount();
         List<Integer> list = new ArrayList<Integer>();
         int limit = SELECTION_BOUND_SIZE - DEFAULT_SELECTED_BOUND_INDEX - 1;
-        //获取获取selectedTitle以及左右两边各两个title的Index
+        //get selected title index and others around it
         for (int i = mCurrentPage - limit; i < mCurrentPage + limit + 1; i++) {
             int index = i;
-            //当index < 0时，使用实际队尾title循环补充到显示队列前方
             while (index < 0) {
                 index += count;
             }
 
-            //当index > 0时，使用实际队头title循环补充到显示队列前方
             while (index >= count) {
                 index -= count;
             }

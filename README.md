@@ -10,8 +10,16 @@ Feature
 * support custom circle indicator
 * support custom title indicator
 
+Gradle Dependencies
+===
+---
 
-Sameple Usage
+    dependencies {
+        compile 'com.github.porval:infiniteindicator:1.0.0'
+    }
+
+
+Sample Usage
 ===
 ---
 
